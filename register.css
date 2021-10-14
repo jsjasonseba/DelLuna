@@ -1,0 +1,242 @@
+#register input{
+    float: right;
+}
+
+#agree{
+    float: none !important;
+}
+
+#register div{
+    height: 70px;
+    width: 300px;
+}
+
+#register div div{
+    margin-top: 2%;
+}
+
+#male{
+    float: none !important;
+}
+
+#female{
+    float: none !important;
+}
+
+#register{
+    display: inline-block;
+}
+
+#content{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display:flex;
+    height: 70px;
+    background-color: rgb(255,235,249);
+    position: relative;
+}
+.navButton{
+    background-color: rgb(249, 194, 237);
+    margin-left: 3%;
+    height: 50%;
+    width: 10%;
+    position: relative;
+    margin-top: auto; 
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
+.webName{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: x-large;
+}
+
+.tripleBar{
+    height: 40%;
+}
+
+.navContainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.navLink{
+    display: none;
+}
+
+.navButton:hover{
+    background-color: rgb(249, 194, 237);
+    margin-left: 3%;
+    height: 50%;
+    width: 10%;
+    position: relative;
+    margin-top: auto; 
+    margin-bottom: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.navButton:hover .line{
+    height: 1px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.navButton:hover .navLink{
+    background-color: rgb(249, 194, 237);
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    z-index: 100;
+}
+
+.navButton:hover .navLink a{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    position: relative;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.circleRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+.circleLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+
+.contentBox{
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+footer{
+    display:flex;
+    padding: 2%;
+    justify-content: space-between;
+    height: 250px;
+    background-color: rgb(255,235,249);
+    position: relative;
+}
+
+.logoFooter{
+    height: 40%;
+}
+
+.leftFooter p{
+    font-size: small;
+
+}
+
+.leftFooter{
+    margin-left: 2%;
+    width: 60%;
+    height: 100%;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media screen and (max-width:600px) {
+    /* Tampilan disesuaikan agar tidak terlalu berdesakan di screen kecil */
+    .dir{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        right: 0;
+        height: 60%;
+    }
+    .webName{
+        display: none;
+    }
+    .logoFooter{
+        width: 30%;
+        height: 30%;
+    }
+    /* ukuran dan jarak antar tombol sosmed disesuaikan agar mudah ditekan pada screen kecil */
+    .sosmed a img{
+        width: 100%;
+    }
+    .sosmed a{
+        margin-bottom: 60%;
+    }
+    .sosmed {
+        justify-content: center;
+        align-items: center;
+    }
+}

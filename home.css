@@ -1,0 +1,310 @@
+nav{
+    display:flex;
+    height: 70px;
+    background-color: rgb(255,235,249);
+    position: relative;
+}
+.navButton{
+    background-color: rgb(249, 194, 237);
+    margin-left: 3%;
+    height: 50%;
+    width: 10%;
+    position: relative;
+    margin-top: auto; 
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
+.webName{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: x-large;
+}
+
+.tripleBar{
+    height: 40%;
+}
+
+.navContainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.navLink{
+    display: none;
+}
+
+.navButton:hover{
+    background-color: rgb(249, 194, 237);
+    margin-left: 3%;
+    height: 50%;
+    width: 10%;
+    position: relative;
+    margin-top: auto; 
+    margin-bottom: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.navButton:hover .line{
+    height: 1px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.navButton:hover .navLink{
+    background-color: rgb(249, 194, 237);
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    z-index: 100;
+}
+
+.navButton:hover .navLink a{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.profile h1{
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.content{
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.learn{
+    color: black;
+    margin-top: 5%;
+    width: 100px;
+    padding: 2% 6%;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(249, 194, 237);
+    font-weight: bold;
+}
+
+.lowerButton{
+    color: black;
+    margin-top: 5%;
+    width: 100px;
+    padding: 2% 6%;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(249, 194, 237);
+    font-weight: bold;
+}
+
+
+.lowerContent{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerContainer h2{
+    margin-bottom: 0;
+}
+
+.containers{
+    text-align: center;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lowerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.circleRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+.circleLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+.slider img{
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.container{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.profile{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slider{
+    width: 300%;
+    position: relative;
+    left: 0;
+    transition: 1s;
+}
+
+.bottomContainer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center
+}
+
+.blockName{
+    width: 40%;
+    text-align: center;
+}
+
+.rightContent{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+footer{
+    display:flex;
+    padding: 2%;
+    justify-content: space-between;
+    height: 250px;
+    background-color: rgb(255,235,249);
+    position: relative;
+}
+
+.logoFooter{
+    height: 40%;
+}
+
+.leftFooter p{
+    font-size: small;
+
+}
+
+.leftFooter{
+    margin-left: 2%;
+    width: 60%;
+    height: 100%;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media screen and (max-width:600px) {
+    /* Tampilan disesuaikan agar tidak terlalu berdesakan di screen kecil */
+    .dir{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        right: 0;
+        height: 60%;
+    }
+    .webName{
+        display: none;
+    }
+    .profile{
+        align-items: center;
+        width: 80%;
+    }
+    .learn{
+        margin-bottom: 5%;
+    }
+    .logoFooter{
+        width: 30%;
+        height: 30%;
+    }
+    /* ukuran dan jarak antar tombol sosmed disesuaikan agar mudah ditekan pada screen kecil */
+    .sosmed a img{
+        width: 100%;
+    }
+    .sosmed a{
+        margin-bottom: 60%;
+    }
+    .sosmed {
+        justify-content: center;
+        align-items: center;
+    }
+}
